@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es"> <!--idioma en español -->
+  <head>
+    <meta charset="utf-8"> <!-- LO QUE HACE EL UTF-8 es agregarle caracteres espciales como la comas ,ñ ,etc-->
+    <title>mi pagina web</title>
+    <style>
+
+h2{
+  color:red ;
+}
+body  {
+ margin : 0;
+ padding : 0;
+
+ /*background-color : #005D8B; */
+ background-image: url("backg.jpg");
+
+}
+
+/* para las listas de arriba    */
+
+ #button {/* el # es para agarrar la lista pero por id que es el button*/
+ }
+
+/*Este código elimina el padding que se puede crear por defecto en una lista de elementos, en este caso nuestro menú.
+
+Por defecto, estas listas se crean de forma vertical, pero nuestro menú tiene que ser horizontal, así que le diremos que se pongan en línea usando “display: inline.” */
+
+ #button li{/* el # es para agarrar la lista pero por id que es el button  ,este es para toda la lista horizontal*/
+ display : inline;
+
+
+ }
+
+ #button li a { /*para lo que son mas las letras*/
+  font-family : Arial;
+  font-size : 15px;
+  text-decoration : none;
+  padding : 10px;
+  background-color : black; /*no es necesario , con agarrar el div de abajo que engloba toda la lista esta bien */
+  color : #fff;
+
+  }
+
+  .w3-top { /* este es para el class del div y agarrarlo dado que puede haber mas de una clase para un atributo , este es todo el div */
+    background-color : black;
+    position : relative;
+    font-size : 20px;
+    width: 1540px;
+     padding : 0px;
+      top: -20px;
+      border: 1px solid black;
+     margin: 2px;
+     opacity: 0;
+
+    /*color : #fff;*/
+  }
+   #res td  {
+  border: 1px solid black;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+   }
+#boton {
+
+    display: block;
+    width: 10%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #f44336;
+    color: #000;
+    transition: all .5s ease 0s;
+    box-shadow: 0 10px #f9ca24;
+
+
+
+}
+     </style>
+  </head>
+  <!--<body onload="recarga()">-->
+  <body>
+<div id="div" class="w3-top">
+    <ul id="button">
+     <li><a href=”#”>Inicio</a></li>
+     <li><a href="#">Sobre nosotros</a></li>
+     <li><a href=”#”>Servicios</a></li>
+     <li><a href=”#”>Productos</a></li>
+     <li><a href=”#”>Contacto</a></li>
+     </ul>
+</div>
+
+<div class="container">
+<div class="section">
+  <button type="button" class="btn" id="boton" name="button"> Traer Datos </button>
+
+  <h1 id="header">
+
+  </h1>
+<table align="center" cellpadding="10" cellspacing="10">
+<thead>
+</thead>
+<tbody id="res" >
+
+</tbody>
+
+
+</table>
+</div>
+</div>
+
+<!--<h2>soy un h2</h2>
+-->
+<!-- <script type="text/javascript" src="funcion.js">///con ruta relativa -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> ESCUCHA BIEN!!!! ACA LO QUE HICIMOS FUE CARGAR UNA RUTA RELATIVA QUE ME TRAE YA EL CODIGO YA ECHO -->
+<!-- EN ESA RUTA ESTA TODA LA DECLARACION Y DEL $ PORQUE SI VOS PONES EN TU JAVASCRIPT (LA QUE SE LLAMA "funcion.js" Y LE PONES CODIGO JQUERY EN LA CONSOLA NO TE IDENTIFICA EL $ PORQUE NECESITAS LAS LIBRERIAS DE JQUERY
+PORESO AGARRE LA RUTA DE LA LINEA 80 Y LLAMA A LA API QUE YA TIENE EL CODIGO YA HECHO ,ENTONCES LO QUE HICE DESPUES FUE AGARRAR ESA RUTA("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js") , ABRIRLA
+ME COPIE EN UN TXT TODAS LAS LINEAS Y LO GUARDE EN MI HTDOCS COMO "jquery.js" ASI CUANDO LA  EJECUTE USO MI RUTA RELATIVA PARA QUE SI HAY PROBLEMA DE INTERNET  NO LLAME A LA API Y LA TENGA YO
+ES COMO QUE LA API AHORA LA TENGO YO SOLO COPIE LA LIBRERIA QUE TIENE TODAS LAS DECLARACIONES Y JQUERY Y EN MI funcion.js LO QUE HAGO ES UNA FUNCION QUE REALIZA EL JQUERY
+ENTONCES TENGO DOS LINEAS EN MI HTML LA 91 QUE QUE LLAMA A LO QUE SERIA MI API(PONELE PARA DECLARAR $ Y TODO EL DINAMISMO PARA USAR JQUERY)
+Y LA 92 QUE LLAMA A LA FUNCION DE MI JAVASCRIPT QUE YO DECODEE QUE ES "funcion.js" DONDE CREE AHI LA FUNCIOIN JQUERY
+) -->
+<!-- YO INTENTABA HACER ESTO DE LA OPACITY SOLO CON JAVASCRIPT PERO NO ME SALIA PORQUE EL NAVEGADOR INTERPRETA TODO Y TE DEVUELVE EL RESULTADO AL TOQUE ENTONCES LLAMO JQUERY QUE REFRECA EL HTML SIN REFRESCAR EL NAVEGADOR UTILIZANDO AJAX -->
+<!-- jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web.​ -->
+
+<script src="jquery.js" type="text/javascript"></script> <!--  -->
+<script type="text/javascript" src="funcion.js">/// con ruta absoluta todo siempre dentro del server
+//C:/blog/imagen.jpg
+//"C:/Users/bruno/Desktop/funcion.js"
+</script>
+
+
+</body>
+
+</html>
+<!---es un comentario atributo charset y valor utf-8-->

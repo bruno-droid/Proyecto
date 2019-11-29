@@ -1,0 +1,84 @@
+[
+  {
+  "nombre":"Abedul",
+  "Color": "Naranja",
+  "Habitat":"Lugares húmedos y bosques ribereños",
+  "Pais": "Europa y Asia",
+  "Usos": "Torneados , Mobiliario ,Artesanía",
+  "Flexibilidad": "Fuerte y maleable",
+  "imagen": "imagenes/Abedul.jpeg"
+   },
+   {
+  "nombre":"Aliso",
+  "Color": "Rojo",
+  "Habitat":"Zonas montañosas y valles",
+  "Pais": "Europa",
+  "Usos": "Frisos, Molduras, Rodapies",
+  "Flexibilidad": "Aserrado fácil",
+  "imagen": "imagenes/Aliso.jpg"
+    },
+    {
+  "nombre":"Alnus-incana",
+  "Color": "Amarillo",
+  "Habitat":"Arroyos y riachuelos",
+  "Pais": " Europa central",
+  "Usos": "Fabricación de chapas y tableros contrachapado",
+  "Flexibilidad": "Madera estable",
+  "imagen": "imagenes/Alnus-incana.jpg"
+    },
+    {
+    "nombre":"Cedro",
+    "Color": "Marrón",
+    "Habitat":"Climas cálidos húmedos",
+    "Pais": "Norte de África",
+    "Usos": "Torneados , Mobiliario ,Artesanía",
+    "Flexibilidad": "duradera, ligera",
+    "imagen": "imagenes/Cedro.jpeg"
+
+     },
+     {
+    "nombre":"Cerezo",
+    "Color": "rojo",
+    "Habitat":"Lugares húmedos y bosques ribereños",
+    "Pais": "Europa y America",
+    "Usos": "Tallas , Torneados ,Carpintería de interior",
+    "Flexibilidad": "Semi-dura",
+    "imagen": "imagenes/Cerezo.jpg"
+      },
+      {
+    "nombre":"Encina",
+    "Color": "Marron oscura",
+    "Habitat":"Ámbitos rurales",
+    "Pais": "America , Africa y Asia",
+    "Usos": "Pequeñas construcciones hidráulicas",
+    "Flexibilidad": "Secado lento",
+    "imagen": "imagenes/Encina.jpg"
+      },
+      {
+      "nombre":"Nogal",
+      "Color": "Marron oscura",
+      "Habitat":"Bosques ribereños",
+      "Pais": "Europa y America",
+      "Usos": "Puertas , Ventanas ,Frisos,Molduras",
+      "Flexibilidad": "Estable",
+      "imagen": "imagenes/Nogal.jpeg"
+       },
+       {
+      "nombre":"Olivo",
+      "Color": "Marron claro",
+      "Habitat":"Bosques frondosos",
+      "Pais": "Europa y África",
+      "Usos": "Tallas y torneados",
+      "Flexibilidad": "Resistente y duradera",
+      "imagen": "imagenes/Olivo.jpeg"
+        },
+        {
+      "nombre":"Olmo",
+      "Color": "Naranja",
+      "Habitat":"Climas templados",
+      "Pais": "Europa ,America y Asia",
+      "Usos": "Suelos , Mobiliario ,Instrumentos musicales",
+      "Flexibilidad": "Textura gruesa",
+      "imagen": "imagenes/Olmo.jpg"
+        }
+]

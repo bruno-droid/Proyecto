@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es"> <!--idioma en español -->
+  <head>
+    <meta charset="utf-8"> <!-- LO QUE HACE EL UTF-8 es agregarle caracteres espciales como la comas ,ñ ,etc-->
+    <title>Taller de observación</title>
+    <style>
+     li{
+  background-color:red;
+}
+h2{
+  color:red ;
+}
+
+     </style>
+  </head>
+  <body>
+<h1>Taller de observación</h1>
+<h2>Clase 1</h2>
+<p>Hicimos una introducción a la materia.Abordamos los temas : <strong> como (git)</strong></p>
+
+<h2>soy un h2</h2>
+
+<!---lista desordenada<script>
+
+var text = '{"Empleados":[' +
+'{"Nombre":"John","apellido":"Doe" },' +
+'{"Nombre":"Anna","apellido":"Smith" },' +
+'{"Nombre":"Peter","apellido":"Jones" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =obj.Empleados[2].Nombre + " " + obj.Empleados[2].apellido;
+</script>-->
+
+<!--<button type="button"  name="mi boton" onclick="document.getElementById('demo').innerHTML='apretaste el boton'"> mi boton</button>
+
+<p id="demo">nadie apreto el boton</p>-->
+
+
+<img id="lamparita" src="APAGADA.gif">
+
+<!--///Tecnica 1-se puede traer la imagen de la ruta absoluta de del server de css3school y necesitas internet y que css3scoll no la mueva la imagen de su carpeta
+//Tecnica 2-podes hacer que traiga la ruta absoluta de tu local c\users.....
+//Tecnica 3-la ruta relativa , lo ideal que es lo que esta aca , y que gracias a estar al mismo nivel (la misma carpeta)
+//DOM ,FORMA DE HACER OBJETOS CON EL DOCUMENTO , QUE CON PUNTOS PODES ACCEDER AL DOCUMENTO, ejemplo el .innerHTML es un objeto de tipo DOM
+navegador es el interprete de js en el cleinte
+JAVASCRIPT PERMITE JUSTAMENTE CONSTRUIR HTML
+ -->
+<script type ="text/JavaScript">
+var imagen=document.getElementById('lamparita');
+var imagen2=document.getElementById('lamparita');
+var c=0;///seteo antes de llamar a la funcion prende c =0
+function prende()
+{
+  if (c==0) {////si c es =0 se prende la lampara (cambia la imagen a una lampara prendida)
+imagen.src="PRENDIDA.gif";
+console.log("estamos en la función")//imprime por consola del navegador
+  //imagen.src="pic_bulbon.gif";
+//document.getElementById('lamparita').src="PRENDIDA.gif";
+ //c=c+1;
+  }/*fin if*/
+//alert(c);
+
+  if (c==1) {//si es c=1 que se apague ,aca hay que entender bien lo que pasa , yo vengo con la funcion la primera vez que se la invoca
+    ///lo que pasa es que encuentra que c==0 y prende la lampara y yo para que en esa funcion no la apague yo necesito de la variable c
+////entonces le pongo como parametro imposible c==1 que yo se que va correr esa linea cuando sea el segundo intento porque se prendio
+//entonces  al final de la funcion seteo c=c+1 para que pase c=1 , ahora una vez que corre aca tiene un problema porque c paso a 1
+///y despues c=1+1 =2 entonces no la va a apagar nunca y mucho menos prender entonces para que el contador vuelva a 0 para que prenda
+///contraresto y a la variable c le digo que valga -1 para que sea c=-1+1 =0 y siempre se mueva entre 0 y 1 que es como todas las nomenclaturas
+//lo hacen 0 apagado ,1 prendido o al reves pero se entiende el concepto.
+    console.log("ELSEE")// aca lo que hace es meterlo por consola en el navegador es como un debug.print  y para ver en la consola que  paso el condicional
+  imagen.src="APAGADA.gif";
+  c=-1;
+}
+c=c+1;
+
+/*alert();*/
+
+
+//}/*fin else*/
+
+}/*fin function*/
+imagen.addEventListener("click",prende);//siendo "Click" que llame la funcion prende , aca lo que hace es llamarla si esta el evento click en la imagen
+//var imagen=document.getElementById('lamparita');
+
+  //if (variable='pic_bulboff.gif') {
+//  }
+//  if (variable='pic_bulbon.gif') {
+//document.getElementById('lamparita').src='pic_bulbon.gif'
+//  }
+</script>
+</body>
+
+</html>
+<!---es un comentario atributo charset y valor utf-8-->
